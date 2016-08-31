@@ -17,24 +17,23 @@ document.getElementById('timeOfDay').innerText = greeting;
 
 
 //Get the day of the week
-    var today = new Date ();
-    var weekDay = today.getDay;
+    var weekDay = today.getDay();
     var msg;
 
 //once we know what day of the week it is, display the matching message
-    if (weekDay = 0){
+    if (weekDay === 0){
       msg = "It's Sunday Funday!";
-    }else if (weekDay = 1){
+    }else if (weekDay === 1){
         msg = "It's Manic Monday!";
-    } else if (weekDay = 2){
+    } else if (weekDay === 2){
         msg = "It's Taco Tuesday!";
-    }else if (weekDay = 3){
+    }else if (weekDay ===3){
         msg = " It's Wednesday! You're half way through";
-    }else if (weekDay = 4){
+    }else if (weekDay === 4){
         msg = "Welcome to Throwback Thursday!";
-    }else if (weekDay = 5){
+    }else if (weekDay === 5){
         msg = 'TGIF!';
-    }else if (weekDay = 6){
+    }else if (weekDay === 6){
         msg = "It's the SaturDaze!";
     }
 
