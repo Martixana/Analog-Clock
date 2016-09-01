@@ -28,7 +28,7 @@ document.getElementById('timeOfDay').innerText = greeting;
     } else if (weekDay === 2){
         msg = "It's Taco Tuesday!";
     }else if (weekDay ===3){
-        msg = " It's Wednesday! You're half way through";
+        msg = " It's Wednesday! You're half way through!";
     }else if (weekDay === 4){
         msg = "Welcome to Throwback Thursday!";
     }else if (weekDay === 5){
