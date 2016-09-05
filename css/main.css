@@ -18,7 +18,21 @@ font-family: verdana, sans-serif;
     font-family: courier, monospace;
     font-size: 100px;
     color: white;
-    border-top: 3px double black;
-    border-bottom: 5px double black;
+    border-top: 3px double #009999;
+    border-left: 5px double #4080bf;
+    border-bottom: 9px double #4080bf;
+    border-right: 1px solid #009999;
+    border-radius: 15px;
     
 }
+
+#welcomeMessage{
+    text-shadow: 1px 1px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 3px 3px #B4EAF3;
+    font-size: 20px; /*font size of text*/
+    color: #207688;
+    letter-spacing: 12px;
+    font-weight: 800;
+    position:relative;
+}
+
+

@@ -4,11 +4,11 @@
     var greeting;
 
     if (hourNow > 18){
-        greeting ='Good Evening ';
+        greeting ='Good Evening, ';
     }else if (hourNow > 12){
-        greeting ='Good Afternoon ';
+        greeting ='Good Afternoon, ';
     }else if (hourNow > 0){
-        greeting ='Good Morning ';
+        greeting ='Good Morning, ';
     }else{
         greeting ='Hello! ';
     }
@@ -16,25 +16,40 @@
 document.getElementById('timeOfDay').innerText = greeting;
 
 
+    var ap = document.getElementById ("time");
+    var post_morn = document.createTextNode('PM');
+    var morn = document.createTextNode ('AM');
+    var am_pm;
+
+    if (hourNow > 12){
+    ap.appendChild(post_morn);
+    }else if (hourNow < 12){
+    ap.appendChild(morn);  
+    }
+document.getElementById('time').innerText = am_pm;
+
+   
+  
+
 //Get the day of the week
     var weekDay = today.getDay();
     var msg;
 
 //once we know what day of the week it is, display the matching message
     if (weekDay === 0){
-      msg = "It's Sunday Funday!";
+      msg = "it's Sunday Funday!";
     }else if (weekDay === 1){
-        msg = "It's Manic Monday!";
+        msg = "it's Manic Monday!";
     } else if (weekDay === 2){
         msg = "It's Taco Tuesday!";
     }else if (weekDay ===3){
-        msg = " It's Wednesday! You're half way through!";
+        msg = " it's Wednesday! You're half way through!";
     }else if (weekDay === 4){
-        msg = "Welcome to Throwback Thursday!";
+        msg = "welcome to Throwback Thursday!";
     }else if (weekDay === 5){
         msg = 'TGIF!';
     }else if (weekDay === 6){
-        msg = "It's the SaturDaze!";
+        msg = "it's the SaturDaze!";
     }
 
     document.getElementById('message').innerText = msg;
