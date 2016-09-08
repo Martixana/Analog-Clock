@@ -1,5 +1,5 @@
 body {
-    background-color: #80d4ea;
+    background-color: #66b3ff;
     font-family: impact, sans-serif;
     text-align: center;
     color: black;
@@ -10,7 +10,7 @@ font-family: verdana, sans-serif;
 
 #time {
     height: 100px;
-    width: 500px;
+    width: 650px;
     padding-bottom: 13px;
     margin: auto;
     position: absolute;
@@ -27,12 +27,13 @@ font-family: verdana, sans-serif;
 }
 
 #welcomeMessage{
-    text-shadow: 1px 1px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 3px 3px #B4EAF3;
+    /*text-shadow: 1px 1px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 3px 3px #B4EAF3 */
     font-size: 20px; /*font size of text*/
     color: #207688;
-    letter-spacing: 12px;
+    letter-spacing: 4px;
     font-weight: 800;
     position:relative;
+    padding-top: 30px;
 }
 
 

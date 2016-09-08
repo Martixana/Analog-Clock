@@ -16,20 +16,19 @@
 document.getElementById('timeOfDay').innerText = greeting;
 
 
-    var ap = document.getElementById ("time");
-    var post_morn = document.createTextNode('PM');
-    var morn = document.createTextNode ('AM');
-    var am_pm;
+function maridian(mar) {
+    if (hourNow >= 12){
+        mar = "PM"
+        // confirms variable was set to AM before return
+        console.log(mar)
 
-    if (hourNow > 12){
-    ap.appendChild(post_morn);
     }else if (hourNow < 12){
-    ap.appendChild(morn);  
+        mar = "AM"  
+        // confirms variable was set to AM before return
+        console.log(mar)
     }
-document.getElementById('time').innerText = am_pm;
-
-   
-  
+    return mar
+}
 
 //Get the day of the week
     var weekDay = today.getDay();
@@ -61,6 +60,7 @@ function startTime() {
     var h = currentTime.getHours();	
     var m = currentTime.getMinutes();
     var s = currentTime.getSeconds();
+    var mar = "no maridain time determined"
  
     //change military time to standard time
     if (h > 12) {
@@ -79,8 +79,12 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
 
+    // confirm variable value before running function
+    console.log(mar)
+    mar = maridian(mar)
+    
     //display the clock on the screen
-    document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+    document.getElementById('time').innerHTML = h + ":" + m + ":" + s + " "+ mar;
 
     //iterate throught the time, 1 second at a time
     setTimeout(function () {
