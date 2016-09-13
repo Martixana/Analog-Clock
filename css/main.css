@@ -1,12 +1,9 @@
-body {
-    background-color: #66b3ff;
-    font-family: impact, sans-serif;
-    text-align: center;
-    color: black;
+html{
+    background-image: url(../img/cat.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
 }
-#message{
-font-family: verdana, sans-serif;
-}
+
 
 #time {
     height: 100px;
@@ -18,21 +15,19 @@ font-family: verdana, sans-serif;
     font-family: courier, monospace;
     font-size: 100px;
     color: white;
-    border-top: 3px double #009999;
-    border-left: 5px double #4080bf;
-    border-bottom: 9px double #4080bf;
-    border-right: 1px solid #009999;
+ /*   border-top: 10px solid #4080bf;*/
+    border-left: 3px solid  #ccf5ff; 
+  /*  border-bottom: 2px solid #4080bf;*/
+    border-right: 3px solid #ccf5ff ; 
     border-radius: 15px;
     
 }
 
 #welcomeMessage{
-    /*text-shadow: 1px 1px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 2px 2px #B4EAF3, 3px 3px #B4EAF3 */
     font-size: 20px; /*font size of text*/
-    color: #207688;
+    color:  #007a99;
     letter-spacing: 4px;
     font-weight: 800;
-    position:relative;
     padding-top: 30px;
 }
 
